@@ -1,9 +1,6 @@
 - **Name:** Nikkesh V  
 - **Registration Number:** 212222050042
 # 19CS301-Module-4
-
-
-# 19CS301-Module-4
 ExNo.4a DICTIONARY- SIZE OF DICTIONARY
 ### AIM
 To write a  python program to print the size of dictionary using getsizeof() from sys module.
