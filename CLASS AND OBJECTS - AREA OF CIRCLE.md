@@ -1,34 +1,42 @@
-# ExNo.4a DICTIONARY- SIZE OF DICTIONARY
+# ExNo.4(d). CLASS AND OBJECTS- AREA OF CIRCLE
+
 - **Name:** Nikkesh V  
 - **Registration Number:** 212222050042
+
 ### AIM
-To write a  python program to print the size of dictionary using getsizeof() from sys module.
+To write Python Program to take the radius from the user and find the area of the circle using class name 'umbrella' and function name 'rain'
 ### ALGORITHM
 
 Step 1:	 Begin the program.
 
-Step 2:	  Import the sys module to access the getsizeof() function.
+Step 2:	  Create a class named umbrella.
 
-Step 3:	 Define dictionaries with necessary values.
+Step 3:	 Define a method rain(self, r) that accepts a radius r as an argument.
 
-Step 4:	 Use sys.getsizeof(dic1) to get the size of dic1,dic2,dic3.
+Step 4:	 Inside the rain method: Calculate the area of a circle using the formula: Area = π * r^2. Use the math.pi constant to get the value of π and perform the calculation. Print the 
+          result, formatted to two decimal places.
 
-Step 5:	  Print the size value of dic1, dic2,dic3.
+Step 5:	 Prompt the user for an integer input to represent the radius of the circle.
 
-Step 6:	 Terminate the program.
+Step 6:	 Create an instance of the umbrella class and store it in the variable u.
 
+Step 7:	 Call the rain method of the umbrella class, passing the user-provided radius r as an argument.
+
+Step 8:	 Terminate the program.
 ### PROGRAM
-```import sys
-dic1 = {"A": 1, "B": 2, "C": 3}
-dic2 = {"Geek1": "Raju", "Geek2": "Nikhil", "Geek3": "Deepanshu"}
-dic3 = {1: "Lion", 2: "Tiger", 3: "Fox", 4: "Wolf"}
-print(f"Size of dic1: {sys.getsizeof(dic1)}bytes")
-print(f"Size of dic2: {sys.getsizeof(dic2)}bytes")
-print(f"Size of dic3: {sys.getsizeof(dic3)}bytes")
+```
+import math
+class umbrella:
+    def rain(self,r):
+        res=math.pi * r * r
+        print(f"Area of circle: {res:.2f}")
+r=int(input())
+u=umbrella()
+u.rain(r)
 ```
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/c04d58b1-b6a9-4753-a88e-db8914bc73c6)
+![image](https://github.com/user-attachments/assets/aa51e6ae-8312-4d49-85a6-774bfead5223)
 
  
 ### RESULT
-Thus the python program for printing a size of dictionary, was implemented and executed successfully.
+Thus the python program for calculating the area of a circle was implemented and executed successfully.
